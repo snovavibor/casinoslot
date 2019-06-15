@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="first" id="first">
+        <div class="inner-user">
+            <div class="user">
+                <p class="title-top"> Казино "Академия ШАГ" </p>
+                <div class="inner-input">
+                    <label for="name"> Укажите свое имя </label><br>
+                    <input type="text" id="name">
+                    <button id="enter" type="button"> Вход </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-game">
+        <div class="wrap-slot">
+            <div class="wrapDisplay" id="wrapDisplay">
+                <div>
+                    <img src="images/girl.jpg" alt="" id="one">
+                </div>
+                <div>
+                    <img src="images/girl.jpg" alt="" id="two">
+                </div>
+                <div>
+                    <img src="images/girl.jpg" alt="" id="three">
+                </div>
+                <button id="start"> START </button>
+            </div>
+            <div class="wrap-result">
+                <div class="result" id="result">
+                    <p>Казино "Академия ШАГ"</p>
+                </div>
+            </div>
+        </div>
+        <!--end wrap-slot -->
+        <div class="wrap-money">
+            <p id="userName">name</p>
+            <p id="mainBalance">Касса : 0,00 грн.</p>
+            <button type="button" id="money"> Пополнить счет </button><br>
+            <p id="betText"> Ваша ставка: 0,00 грн.</p>
+            <button type="button" id="bets"> Сделать ставку </button><br>
+            <p id="informer"></p>
+            <div class="kassa" id="kassa">
+                <input type="number" min="0" step="10" id="balance" autocomplete="off" value="1000">
+                <button type="button" id="butKassa"> Enter </button>
+            </div>
+            <div class="bet" id="betDiv">
+                <input type="number" min="1" step="1" id="bet" autocomplete="off" value="1">
+                <button type="button" id="butBet"> Enter </button>
+            </div>
+        </div>
+        <div class="wrapTable textCenter">
+            <div class="innerTable orange">
+                <div class="title">
+                    <p> Комбинация </p>
+                </div>
+                <div class="title">
+                    <p> Описание </p>
+                </div>
+                <div class="title">
+                    <p> Выигрыш </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/dragon.png" alt="dragon">
+                    <img src="images/dragon.png" alt="dragon">
+                    <img src="images/dragon.png" alt="dragon">
+                </div>
+                <div class="title">
+                    <p> Три Дракона </p>
+                </div>
+                <div class="title">
+                    <p> 800 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/star.png" alt="star">
+                    <img src="images/star.png" alt="star">
+                    <img src="images/star.png" alt="star">
+                </div>
+                <div class="title">
+                    <p> Три Звезды </p>
+                </div>
+                <div class="title">
+                    <p> 200 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/ace.jpg" alt="ace">
+                    <img src="images/ace.jpg" alt="ace">
+                    <img src="images/ace.jpg" alt="ace">
+                </div>
+                <div class="title">
+                    <p> Три Туза </p>
+                </div>
+                <div class="title">
+                    <p> 80 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/girl.jpg" alt="girl">
+                    <img src="images/girl.jpg" alt="girl">
+                    <img src="images/girl.jpg" alt="girl">
+                </div>
+                <div class="title">
+                    <p> Три Девушки </p>
+                </div>
+                <div class="title">
+                    <p> 40 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/js.jpg" alt="jsIcon">
+                    <img src="images/js.jpg" alt="jsIcon">
+                    <img src="images/js.jpg" alt="jsIcon">
+                </div>
+                <div class="title">
+                    <p> Три иконки JS </p>
+                </div>
+                <div class="title">
+                    <p> 20 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/dollar.png" alt="dollar">
+                    <img src="images/euro.png" alt="euro">
+                    <img src="images/grivna.jpg" alt="grivna">
+                </div>
+                <div class="title">
+                    <p> Три любых купюры </p>
+                </div>
+                <div class="title">
+                    <p> 10 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/any.jpg" alt="any">
+                    <img src="images/dollar.png" alt="dollar">
+                    <img src="images/euro.png" alt="euro">
+                </div>
+                <div class="title">
+                    <p> Две любых купюры </p>
+                </div>
+                <div class="title">
+                    <p> 5 к 1 </p>
+                </div>
+            </div>
+            <div class="innerTable purple">
+                <div class="title picters">
+                    <img src="images/any.jpg" alt="any">
+                    <img src="images/any.jpg" alt="any">
+                    <img src="images/dollar.png" alt="dollar">
+                </div>
+                <div class="title">
+                    <p> Одна любая купюра </p>
+                </div>
+                <div class="title">
+                    <p> 2 к 1 </p>
+                </div>
+            </div>
+        </div><!-- end wrap table -->
+    </div>
+   
+    <script src="js/my-script.js"></script>
+    
+</body>
+
+</html>

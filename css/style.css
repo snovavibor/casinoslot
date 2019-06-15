@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+		min-width: 1695px;
+    background: url(../images/mainbg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.first {
+    position: absolute;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .8;
+    background: url(../images/glass.jpg)no-repeat;
+    background-size: 100% 100%;
+}
+
+.inner-user {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+.title-top
+{
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+.user {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    width: 30%;
+    height: 500px;
+    padding: 20px;
+
+    text-align: center;
+
+    border: 3px solid white;
+    border-radius: 10px;
+    background: url(../images/bgSlot.jpg) no-repeat;
+    background-size: cover;
+
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.user label {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+
+    color: white;
+}
+
+.orange {
+    background-color: rgba(255, 0, 0, .4);
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.wrap-game {
+    display: flex;
+
+    height: 100%;
+    padding: 15px;
+
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: inset 9px 9px 54px 30px rgba(128, 0, 128, 1);
+
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.wrapDisplay {
+    display: flex;
+
+    width: 570px;
+    height: 135px;
+    padding: 10px 5px;
+
+    border: 3px solid white;
+    border-radius: 10px;
+    background: url(../images/bgSlot.jpg) no-repeat;
+
+    justify-content: space-around;
+}
+
+.wrapDisplay div {
+    width: 30%;
+    padding: 5px;
+
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.wrapDisplay div img {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#start {
+    font-weight: bold;
+
+    margin-left: 10px;
+    padding: 5% 6%;
+
+    transition: all .3s ease-in;
+
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, .4);
+}
+
+#start:hover {
+    font-style: italic;
+
+    cursor: pointer;
+    -webkit-transform: scale(1.1) rotate(360deg);
+            transform: scale(1.1) rotate(360deg);
+
+    background-color: rgba(255, 0, 0, .8);
+    box-shadow: 1px 1px 5px orange;
+}
+
+/*---------------- wrap money ------------------*/
+.wrap-money {
+    font-size: 1.5em;
+
+    position: relative;
+
+    width: 300px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: white;
+    border-radius: 10px;
+    background: url(../images/bgSlot.jpg) no-repeat;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 5px 1px white;
+}
+
+.wrap-money p {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#informer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#money,
+#bets,
+.kassa button,
+.bet button,
+#enter {
+    font-size: .8em;
+    font-weight: bold;
+
+    overflow: hidden;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+}
+
+.kassa button:hover,
+.bet button:hover,
+#money:hover,
+#bets:hover {
+    background-color: rgba(255, 0, 0, .4);
+}
+
+.kassa,
+.bet {
+    display: none;
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+
+    border: 3px solid white;
+    border-radius: 10px;
+
+    justify-content: space-around;
+}
+
+.kassa input,
+.bet input,
+.user input {
+    font-size: .8em;
+
+    width: 60%;
+    padding: 10px;
+
+    text-align: center;
+
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, .4);
+}
+
+/* -----------------tableText -----------------*/
+.wrapTable {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+
+    width: 765px;
+
+    color: white;
+    border-radius: 10px;
+    background: url(../images/bgSlot.jpg) no-repeat;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 5px 1px white;
+}
+
+.innerTable {
+    display: flex;
+
+    padding: 2px;
+
+    border-radius: 10px;
+
+    align-items: center;
+}
+
+.innerTable .title {
+    width: 40%;
+}
+
+.picters img {
+    width: 30%;
+    height: 80px;
+
+    border-radius: 15px;
+}
+
+.wrap-slot {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-result {
+    display: inline-block;
+
+    width: 565px;
+    margin-left: 5px;
+    padding: 10px;
+
+    border-radius: 10px;
+    background: url(../images/bgSlot.jpg) no-repeat;
+}
+
+.result {
+    font-size: 1.5em;
+    font-weight: bold;
+
+    margin-left: 50px;
+
+    color: white;
+}
